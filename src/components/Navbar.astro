@@ -1,0 +1,21 @@
+---
+import Github from "@assets/icons/github.astro"
+import Email from "@assets/icons/email.astro"
+import ContainerHover from "@components/ContainerHover.astro"
+import Linkedin from "@assets/icons/linkedin.astro"
+---
+
+<nav class="w-full flex justify-between items-center">
+  <span class="text-xl">@mmatthews</span>
+  <div class="flex gap-2 items-center">
+    <ContainerHover title="Go to LinkedIn profile." link="https://www.linkedin.com/in/markmatthewsweb/" target="_blank">
+      <Linkedin />
+    </ContainerHover>    
+    <ContainerHover title="Send an email." link="mailto:markmatthews.web@gmail.com" target="_blank">
+      <Email />
+    </ContainerHover>
+    <ContainerHover title="Go to Mark Matthews' GitHub profile." link="https://github.com/mmatthews" target="_blank">
+      <Github />
+    </ContainerHover>
+  </div>
+</nav>

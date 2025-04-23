@@ -1,0 +1,102 @@
+---
+import ProjectCard from '@components/ProjectCard.astro'
+import React from '@assets/icons/react.astro';
+import Tailwind from '@assets/icons/tailwind.astro';
+import Wordpress from '@assets/icons/wordpress.astro';
+import Sass from '@assets/icons/sass.astro';
+import ACF from '@assets/icons/acf.astro';
+import Figma from '@assets/icons/figma.astro';
+import Vue from '@assets/icons/vue.astro';
+import WPML from '@assets/icons/wpml.astro';
+import JS from '@assets/icons/js.astro';
+import Maps from '@assets/icons/maps.astro';
+import Woo from '@assets/icons/woo.astro';
+import Electron from '@assets/icons/electron.astro';
+
+import datawyzeScreenshot from '../assets/images/datawyze_screenshot.png';
+import layfieldScreenshot from '../assets/images/layfield_screenshot.png';
+import transoftScreenshot from '../assets/images/transoft_screenshot.png';
+import westlandScreenshot from '../assets/images/westland_screenshot.png';
+import echoScreenshot from '../assets/images/echo_screenshot.png';
+import hondaScreenshot from '../assets/images/honda_screenshot.png';
+
+---
+
+
+<section class="my-20">
+  <h2 class="text-2xl font-semibold mb-2">Projects</h2>
+  <hr class="mb-6 border-amber-700">
+
+  <ProjectCard projectTitle="Datawyze"
+    projectDescription="Full WordPress theme build custom coded from Figma. BEM and responsive design. ACF Flexible Components. 95% Lighthouse performance score." 
+    projectLink="https://datawyze.com/" 
+    image={datawyzeScreenshot}>
+
+    <Wordpress />
+    <Sass size="w-7 h-6" />
+    <ACF size="w-8 h-6" />
+    <Figma />
+  </ProjectCard>
+  
+
+  <ProjectCard projectTitle="Layfield" 
+    projectDescription="Full WordPress theme development. Extended WordPress REST API with Vue frontend for Resource Center listing and filtering. 95% Lighthouse accessibility score." 
+    projectLink="https://github.com/Gothsec/StockIn-demo" 
+    image={layfieldScreenshot}>
+
+    <Wordpress />
+    <Sass size="w-7 h-6" />
+    <Vue />
+    <ACF size="w-8 h-6" />
+    <Figma />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="Honda Canada - Toronto Auto Show" 
+    projectDescription="Custom Electron app written in ES6. Consumed data from external REST API and displayed vehicle information on physical touch screens." 
+    projectLink="https://www.youtube.com/watch?v=_dD8nl8eMCg"
+    image={hondaScreenshot}>
+
+    <Electron size="w-7 h-7" /> 
+    <JS />
+    <Sass size="w-7 h-6" />    
+  </ProjectCard>    
+
+  <ProjectCard projectTitle="Echo Brands" 
+    projectDescription="WooCommerce theme development. User account management, permissions and roles. Blending vector and raster graphics in SVG through use of <foreignObject>" 
+    projectLink="https://echobrands.com/" 
+    image={echoScreenshot}>
+
+    <Wordpress />
+    <Woo size="w-8 h-6" />
+    <Vue />
+    <ACF size="w-8 h-6" />
+    <Sass size="w-7 h-6" />
+    <Figma />    
+  </ProjectCard>     
+
+  <ProjectCard projectTitle="Westland Insurance" 
+    projectDescription="Custom Google Maps integration with clustered markers. Geocode and Autocomplete API." 
+    projectLink="https://www.westlandinsurance.ca/locations/" 
+    image={westlandScreenshot}>
+
+    <JS />
+    <Maps size="w-6 h-7"/>
+  </ProjectCard> 
+
+  <ProjectCard projectTitle="Transoft" 
+    projectDescription="WPML build for large transportation software company. Divided into four business units, this site leverages multiple Custom Post Types with filtering via Vue. 100% Lighthouse SEO score." 
+    projectLink="https://www.transoftsolutions.com/" 
+    image={transoftScreenshot}>
+
+    <Wordpress />
+    <WPML />
+    <Sass size="w-7 h-6" />
+    <Vue />
+    <ACF size="w-8 h-6" />
+    <Figma />    
+  </ProjectCard>  
+
+  <!-- ZENDESK, ONLIA -->
+  
+
+</section>

@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import markMatthewsImage from '../assets/images/markmatthews_sm.jpg';
+---
+
+<div class="flex flex-col items-center justify-center mt-20 mb-16">
+  <div class="border-8 border-amber-700 rounded-full overflow-clip w-full max-w-56 mb-10">
+    <Image class="aspect-square" src={markMatthewsImage} alt="Headshot of full stack developer Mark Matthews." />
+  </div>
+  <h1 class="text-4xl font-bold block">Mark Matthews</h1>
+  <p class="text-2xl text-zinc-400"><em>Senior Full Stack Developer</em></p>
+</div>

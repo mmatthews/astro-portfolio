@@ -1,0 +1,26 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import ProfileSection from '@components/ProfileSection.astro';
+import AboutSection from '@components/AboutSection.astro';
+import ProjectsSection from '@components/ProjectsSection.astro';
+import SkillsSection from '@components/SkillsSection.astro';
+import FooterSection from '@components/FooterSection.astro';
+---
+
+<Layout pageTitle="Mark Matthews - Senior Full Stack Developer">
+  <div class="min-w-0 max-w-[660px] mx-auto py-8 px-8 selection:bg-gray-600 selection:text-white">
+    <header>
+      <Navbar />
+      <ProfileSection />
+    </header>
+    <main>
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
+    </main>
+    <footer>
+      <FooterSection />
+    </footer>
+  </div>
+</Layout>

@@ -1,0 +1,19 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', Georgia, serif;
+    background-color: #111111;
+    color: #FEFEFE;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+.project-card{
+    background-image: 'radial-gradient(circle, #6c6c6c1d 0%, transparent 100%)';
+}

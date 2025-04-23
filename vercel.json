@@ -1,0 +1,12 @@
+{
+    "redirects": [
+        {
+            "source": "/portfolio",
+            "destination": "/"
+        },
+        {
+            "source": "/projects",
+            "destination": "/"
+        }
+    ]
+}

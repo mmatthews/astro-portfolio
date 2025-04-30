@@ -1,5 +1,6 @@
 ---
 import SpeedInsights from "@vercel/speed-insights/astro"
+import Analytics from '@vercel/analytics/astro'
 const pageTitle = Astro.props.pageTitle;
 import '../styles/global.scss';
 ---
@@ -19,5 +20,6 @@ import '../styles/global.scss';
 	<body>
 		<slot />
 		<SpeedInsights />
+		<Analytics />
 	</body>
 </html>
